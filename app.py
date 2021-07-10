@@ -40,7 +40,8 @@ def data_tours(id):
     duration = data.tours[tour_id]["nights"]
     description = data.tours[tour_id]["description"]
     print(country)
-    return render_template('data_tours.html', country=country, hotel=hotel, price=price, duration=duration, description=description)
+    return render_template('data_tours.html', country=country, hotel=hotel, price=price, duration=duration,
+                           description=description)
 
 
 if __name__ == '__main__':
